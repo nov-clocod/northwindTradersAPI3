@@ -3,6 +3,7 @@ package com.pluralsight.northwindTradersAPI3.dao.implementations;
 import com.pluralsight.northwindTradersAPI3.dao.interfaces.ICategoryDAO;
 import com.pluralsight.northwindTradersAPI3.models.Category;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -12,6 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class JDBCCategoryDAO implements ICategoryDAO {
     private DataSource dataSource;
 
